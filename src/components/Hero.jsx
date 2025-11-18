@@ -11,8 +11,8 @@ export default function Hero() {
         <div className="pt-28 sm:pt-32 lg:pt-36" />
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/60 backdrop-blur px-3 py-1 text-xs text-neutral-700">
-              <span className="h-2 w-2 rounded-full bg-red-400" />
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/70 backdrop-blur px-3 py-1 text-xs text-neutral-700">
+              <span className="h-2 w-2 rounded-full bg-[#FFD166]" />
               Veszprém • Webdesigner ügynökség
             </div>
             <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-neutral-900">
@@ -22,10 +22,10 @@ export default function Hero() {
               Segítünk márkádnak online kitűnni letisztult, gyors és mobilbarát weboldalakkal. Stratégia, design, fejlesztés — egy kézben.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <a href="#kapcsolat" className="inline-flex items-center justify-center rounded-full bg-neutral-900 text-white px-6 py-3 text-sm hover:bg-neutral-800 transition-colors">
+              <a href="#kapcsolat" className="inline-flex items-center justify-center rounded-full bg-[#0E76FD] text-white px-6 py-3 text-sm hover:opacity-90 shadow-sm">
                 Kérek ajánlatot
               </a>
-              <a href="#munkak" className="inline-flex items-center justify-center rounded-full bg-white/70 backdrop-blur text-neutral-900 px-6 py-3 text-sm hover:bg-white transition-colors">
+              <a href="#munkak" className="inline-flex items-center justify-center rounded-full bg-white/80 backdrop-blur text-neutral-900 px-6 py-3 text-sm border border-white/50 hover:bg-white">
                 Referenciák megtekintése
               </a>
             </div>
@@ -33,7 +33,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-white via-white/50 to-white/10" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-white via-white/60 to-white/10" />
     </section>
   )
 }

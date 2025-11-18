@@ -5,20 +5,23 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 inset-x-0 z-40 backdrop-blur-md bg-white/60 border-b border-neutral-200/60">
+    <header className="fixed top-0 inset-x-0 z-40 backdrop-blur-md bg-white/70 border-b border-neutral-200/60">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="h-16 flex items-center justify-between">
-          <a href="#" className="font-semibold tracking-tight text-neutral-900 text-lg">netomate</a>
+          <a href="#" className="font-semibold tracking-tight text-neutral-900 text-lg inline-flex items-center gap-2">
+            netomate
+            <span aria-hidden className="inline-block h-2 w-2 rounded-full bg-[#FFD166]" />
+          </a>
 
           <nav className="hidden md:flex items-center gap-8 text-sm text-neutral-700">
-            <a href="#szolgaltatasok" className="hover:text-neutral-900 transition-colors">Szolgáltatások</a>
-            <a href="#munkak" className="hover:text-neutral-900 transition-colors">Munkáink</a>
-            <a href="#folyamat" className="hover:text-neutral-900 transition-colors">Folyamat</a>
-            <a href="#kapcsolat" className="hover:text-neutral-900 transition-colors">Kapcsolat</a>
+            <a href="#szolgaltatasok" className="hover:text-[#0E76FD] transition-colors">Szolgáltatások</a>
+            <a href="#munkak" className="hover:text-[#0E76FD] transition-colors">Munkáink</a>
+            <a href="#folyamat" className="hover:text-[#0E76FD] transition-colors">Folyamat</a>
+            <a href="#kapcsolat" className="hover:text-[#0E76FD] transition-colors">Kapcsolat</a>
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
-            <a href="#kapcsolat" className="inline-flex items-center gap-2 rounded-full bg-neutral-900 text-white px-4 py-2 text-sm hover:bg-neutral-800 transition-colors">
+            <a href="#kapcsolat" className="inline-flex items-center gap-2 rounded-full bg-[#0E76FD] text-white px-4 py-2 text-sm hover:opacity-90 shadow-sm">
               <Phone className="w-4 h-4" />
               Ingyenes konzultáció
             </a>
@@ -35,7 +38,7 @@ export default function Navbar() {
             <a href="#munkak" className="block px-3 py-2 rounded-lg hover:bg-neutral-100">Munkáink</a>
             <a href="#folyamat" className="block px-3 py-2 rounded-lg hover:bg-neutral-100">Folyamat</a>
             <a href="#kapcsolat" className="block px-3 py-2 rounded-lg hover:bg-neutral-100">Kapcsolat</a>
-            <a href="#kapcsolat" className="block px-3 py-2 rounded-lg bg-neutral-900 text-white text-center">Ingyenes konzultáció</a>
+            <a href="#kapcsolat" className="block px-3 py-2 rounded-lg bg-[#0E76FD] text-white text-center">Ingyenes konzultáció</a>
           </div>
         )}
       </div>

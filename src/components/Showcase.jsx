@@ -15,13 +15,16 @@ export default function Showcase() {
 
         <div className="mt-10 grid md:grid-cols-3 gap-6">
           {works.map((w) => (
-            <div key={w.title} className="group rounded-2xl overflow-hidden border border-neutral-200">
+            <div key={w.title} className="group rounded-2xl overflow-hidden border border-neutral-200 bg-white">
               <div className="aspect-[4/3] overflow-hidden">
                 <img src={w.img} alt={w.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
-              <div className="p-4">
-                <div className="text-xs text-neutral-500">{w.tag}</div>
-                <div className="font-medium text-neutral-900">{w.title}</div>
+              <div className="p-4 flex items-center justify-between">
+                <div>
+                  <div className="text-xs text-neutral-500">{w.tag}</div>
+                  <div className="font-medium text-neutral-900">{w.title}</div>
+                </div>
+                <span className="inline-flex items-center h-8 px-3 rounded-full text-xs font-medium bg-[#FFD166]/30 text-[#0E76FD] border border-[#0E76FD]/10">case study</span>
               </div>
             </div>
           ))}
